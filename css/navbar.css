@@ -3,8 +3,9 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
     padding: 30px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .links{
@@ -18,4 +19,9 @@
 
 .links li{
     margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
