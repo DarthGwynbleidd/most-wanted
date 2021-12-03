@@ -1,0 +1,23 @@
+:root{
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
