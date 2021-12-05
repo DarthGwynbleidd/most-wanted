@@ -4,13 +4,41 @@
   margin: 20px auto;
 } 
 
+.title-box{
+  position: sticky;
+  background-color: black;
+  font-size: 70px;
+  color: yellow;
+  max-width: 30em;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 .25em .5em black,inset 0 0 1em .25em black;
+  padding: 20px
+}
+
+.title-box > :first-child {
+  display: inline-block;                
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: defilement-rtl 12s infinite linear;
+  font-weight: 700;
+}
+
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0,0,0);      /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%,0,0);  /* position finale à gauche */
+  }
+}
+
 .criminal-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  
-  
+  margin-top: 50px;
 }
 
 .criminal-box {
@@ -18,12 +46,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 35px;
-  border: 2px solid orange;
+  background: white;
   background-clip: padding-box;
   text-align: center;
+  margin: 30px;
+  border: solid 2px white;
+}
+
+.criminal-box > h6{
+  font-size: 20px;
+  margin: 10px;
 }
 
 .button {
@@ -57,9 +89,10 @@
   flex-wrap: wrap;
   margin: 100px auto;
   background: #FFD300;
-  width: 95%;
+  width: 90%;
   position: relative;
   max-height: 95vh;
+  overflow-y: scroll;
 }
 
 .popup h2 {
@@ -93,10 +126,6 @@
 
 .content h4{
   margin-right: 100px;
-}
-
-.zoom-img {
-  width: 100%;
 }
 
 .about{

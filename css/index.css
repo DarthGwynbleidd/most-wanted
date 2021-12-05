@@ -1,5 +1,13 @@
 .main-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    background-color: #003061;
+    max-width: 1500px;
+    margin: 20px auto;
+  }
+
+  .middle-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  
