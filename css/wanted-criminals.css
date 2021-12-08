@@ -5,7 +5,6 @@
 } 
 
 .title-box{
-  position: sticky;
   background-color: black;
   font-size: 70px;
   color: yellow;
@@ -85,14 +84,27 @@
 
 .popup {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 100px auto;
+  flex-direction: column;
+  margin: 50px auto 50px auto;
   background: #FFD300;
   width: 90%;
+  max-width: 1400px;
   position: relative;
-  max-height: 95vh;
+  max-height: 90vh;
   overflow-y: scroll;
+}
+
+.popup-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.popup-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
 }
 
 .popup h2 {
@@ -116,21 +128,63 @@
   color: red;
 }
 
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.content h4{
-  margin-right: 100px;
-}
-
 .about{
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.wanted{
+  padding: 5px;
+  background-color: white;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  width: 90%;
+}
+
+.content{
+  margin-right: 100px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.content > p{
+  margin: 5px;
+}
+
+.zoom-img{
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.bio-title{
+
+}
+
+.bio{
+  padding: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1150px) {
+  .zoom-img{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .popup{
+    max-width: 400px;
+  }
+  .popup-top{
+    flex-wrap: wrap;
+  }
 }
