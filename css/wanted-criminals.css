@@ -25,10 +25,10 @@
 
 @keyframes defilement-rtl {
   0% {
-    transform: translate3d(0,0,0);      /* position initiale à droite */
+    transform: translate3d(0,0,0);
   }
   100% {
-    transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    transform: translate3d(-100%,0,0); 
   }
 }
 
@@ -46,9 +46,8 @@
   justify-content: flex-start;
   align-items: center;
   background: white;
-  background-clip: padding-box;
   text-align: center;
-  margin: 30px;
+  margin: 20px;
   border: solid 2px white;
 }
 
@@ -165,13 +164,13 @@
   max-width: 100%;
 }
 
-.bio-title{
-
-}
-
 .bio{
   padding: 20px;
   text-align: left;
+}
+
+.too-bad{
+  display: none;
 }
 
 @media screen and (max-width: 1150px) {
@@ -186,5 +185,36 @@
   }
   .popup-top{
     flex-wrap: wrap;
+  }
+  .about{
+    align-items: center;
+  }
+  .about h2{
+    font-size: 20px;
+  }
+  .title-box{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    padding: 0;
+
+  }
+  .about h2{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 319px){
+  .main-container{
+    display: none;
+  }
+  .too-bad{
+    display: block;
   }
 }
