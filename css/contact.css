@@ -1,0 +1,15 @@
+#infos {
+    display: none;
+}
+.block{
+    display: block;
+}
+#euh{
+    display: none;
+}
+#denunciations{
+    display: none;
+}
+.content{
+    min-width: 310px;
+}

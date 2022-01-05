@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +18,74 @@
             </div>
             <ul class="links">
                 <li><a href="index.html">Wanted criminals</a></li>
-                <li><a href="wanted-groups.html">Wanted groups</a></li>
                 <li><a class="active" href="#">Contact</a></li>
             </ul>    
         </nav>
-        <section>
-            
-        </section>
+    <section>
+        <p>Bienvenue dans notre section contact, merci de bien vouloir indiquer le motif pour lequel vous souhaiter nous contacter .</p>
+        <div class="main-select">
+            <label class="block" for="motif">Choisissez un motif:</label>
+
+            <select class="block" name="motif" id="motif-select">
+                <option value="">--Please choose an option--</option>
+                <option value="denunciations">Je souhaite dénoncer mon voisin, mon collegue, ma femme, mon chien,...</option>
+                <option value="informations">J'ai des informations sur un des rigolos de la page d'acceuil</option>
+                <option value="euh">Euh... aucune idée, je voulais voir les autres options</option>
+            </select>
+        </div>
+        <div id="denunciations">
+
+        </div>
+        <div id="infos">
+            <div>
+                <label class="block" for="">De quel déchet de l'humanité s'agit-il?:</label>
+
+                <select class="block" name="criminals" id="criminals-select">
+                    <option value="default">--Please choose an option--</option>
+                    <option value="Alban">Alban Thaumur</option>
+                    <option value="Manon">Manon Vavasseur</option>
+                    <option value="Thibault">Thibault Séchet</option>
+                    <option value="Stephane">Stéphane Gagnant</option>
+                    <option value="Melvin">Melvin Silva</option>
+                    <option value="Angelique">Angelique Rioux</option>
+                    <option value="Vincent">Vincent Charlette</option>
+                    <option value="JeanMi">Jean-Michel Pailherey</option>
+                    <option value="Jonathan">Jonathan Narboni</option>
+                    <option value="Michael">Michael Michaux</option>
+                    <option value="Nicolas">Nicolas Bouchet</option>
+                    <option value="Ched">Ched Brun</option>
+                    <option value="Anais">Anais Roussy-Renard</option>
+                    <option value="Nolan">Nolan Wittman</option>
+                    <option value="Fred">Fred Andolina</option>
+                    <option value="Leila">Leila Ait Itto</option>
+                </select>
+            </div>
+            <div>
+                <img class="block" id="criminal-img">
+                <form class="block" action="/ma-page-de-traitement" method="post">
+                    <div>
+                        <label for="name">Nom :</label>
+                        <input class="content" type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail">e-mail :</label>
+                        <input class="content" type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                        <label for="msg">Message :</label>
+                        <textarea class="content" id="msg" name="user_message"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="euh">
+            <p>Merci de nous avoir perdre notre temps ainsi que le votre, si jamais vous avez une véritable information à nous fournir n'hésitez pas à choisir un motif de contact...</p>
+        </div>
+    </section>
         <footer>
 
         </footer>
     </section>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
