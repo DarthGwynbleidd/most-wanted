@@ -1,5 +1,6 @@
 .main-container{
   background-color: #003061;
+  width: 100%;
   max-width: 1500px;
   margin: 20px auto;
 } 
