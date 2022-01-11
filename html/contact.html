@@ -33,7 +33,48 @@
                 </select>
             </div>
             <div id="denunciations">
+                <label class="block" for="motif">Etes-vous sur:</label>
 
+                <select class="block" name="motif" id="motif-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="denunciations">OUI, ABSOLUMENT, TOUT A FAIT CERTAIN</option>
+                    <option value="informations">Euh vous avez raison j'hesite un peu...</option>
+                </select>
+            </div>
+            <div id="denunciations1">
+                <label class="block" for="motif">Etes-vous sur:</label>
+
+                <select class="block" name="motif" id="motif-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="denunciations">OUI, ABSOLUMENT, TOUT A FAIT CERTAIN</option>
+                    <option value="informations">Euh vous avez raison j'hesite un peu</option>
+                </select>
+            </div>
+            <div id="denunciations-final">
+                <div>
+                    <label class="block" for="">De quel déchet de l'humanité s'agit-il?:</label>
+
+                    <select class="block" name="criminals" id="criminals-select">
+                        <option value="default">--Please choose an option--</option>
+                    </select>
+                </div>
+                <div>
+                    <img class="block" id="criminal-img">
+                    <form class="block" action="/ma-page-de-traitement" method="post">
+                        <div>
+                            <label for="name">Nom :</label>
+                            <input class="content" type="text" id="name" name="user_name">
+                        </div>
+                        <div>
+                            <label for="mail">e-mail :</label>
+                            <input class="content" type="email" id="mail" name="user_mail">
+                        </div>
+                        <div>
+                            <label for="msg">Message :</label>
+                            <textarea class="content" id="msg" name="user_message"></textarea>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div id="infos">
                 <div>
