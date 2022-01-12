@@ -4,7 +4,19 @@
     max-width: 1500px;
     margin: 20px auto;
     min-height: 1000px;
-} 
+    color: white;
+}
+
+.bottom-container{
+    padding: 0;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    font-size: 20px;
+}
 
 #infos {
     display: none;
@@ -12,12 +24,69 @@
 .block{
     display: block;
 }
-#euh{
-    display: none;
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.main-select{
+    padding: 0;
 }
 #denunciations{
     display: none;
 }
+#denunciation-img{
+    max-width: 224px;
+    max-height: 298px;
+
+}
+.container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .content{
     min-width: 310px;
+    width: 100%;
 }
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.element{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.picture{
+    display: flex;
+    align-content: center;
+
+}
+.btn{
+    width: 100%;
+}
+.too-bad{
+    display: none;
+  }
+@media screen and(max-width: 470px){
+    .input{
+        width: auto;
+    }
+    .input option{
+        width: auto;
+    }
+}
+@media screen and (max-width: 319px){
+    .main-container{
+      display: none;
+    }
+    .too-bad{
+      display: block;
+    }
+  }
