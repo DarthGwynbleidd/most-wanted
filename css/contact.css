@@ -17,7 +17,6 @@
     align-content: space-around;
     font-size: 20px;
 }
-
 #infos {
     display: none;
 }
@@ -74,12 +73,9 @@
 .too-bad{
     display: none;
   }
-@media screen and(max-width: 470px){
-    .input{
-        width: auto;
-    }
-    .input option{
-        width: auto;
+@media screen and (max-width: 470px){
+    #motif-select{
+        width: 310px;
     }
 }
 @media screen and (max-width: 319px){
